@@ -62,7 +62,7 @@ const Home = () => {
   return (
     <section className='max-w-7xl mx-auto '>
       <div className='bg-secondary rounded-lg p-10'>
-        <h1 className='font-extrabold text-text text-8xl sm:6xl'>ImGen</h1>
+        <h1 className='font-extrabold text-text text-6xl md:text-8xl'>ImGen</h1>
         <p className='mt-2 text-lg text-text max-w-[1000px]'>Browse through a collection of images, or make your own!</p>
       </div>
       <div className='mt-16'>
