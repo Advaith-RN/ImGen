@@ -115,7 +115,7 @@ const CreatePost = () => {
         </div>
       </div>
       <div className='mt-5 flex gap-5'>
-        <button type="button" onClick={generateImg} className='text-text bg-primary font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center  transition-transform hover:scale-[1.1]'>
+        <button type="button" onClick={generateImg} className='text-text bg-primary font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center  transition-transform md:hover:scale-[1.1]'>
           {generatingImg ? "Generating..." : "Generate Image"}
         </button>
       </div>
@@ -123,7 +123,7 @@ const CreatePost = () => {
         <p className='mt-2 text-text text-[14px]'>Once you have created the image you want, share it with others in the community!</p>
         <button
           type="submit"
-          className='mt-3 text-white bg-accent font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center transition-transform hover:scale-[1.1]'
+          className='mt-3 text-white bg-accent font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center transition-transform md:hover:scale-[1.1]'
           onClick={handleSubmit}
         >
           {loading ? "Posting..." : "Share it with the world!"}

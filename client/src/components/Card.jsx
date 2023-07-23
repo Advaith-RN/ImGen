@@ -4,6 +4,7 @@ import { downloadImage } from '../utils';
 
 const Card = ({ _id, name, prompt, photoUrl}) => {
   const RandomColor = "#"+Math.floor(Math.random() * 16777215).toString(16);
+  
   return (
     <div className='rounded-xl group relative shadow-card hover:shadow-cardhover hover:scale-[1.02] transition-all card'>
       <img className='w-full h-auto object-cover rounded-xl'
@@ -14,14 +15,14 @@ const Card = ({ _id, name, prompt, photoUrl}) => {
         <p className='text-text text-md overflow-y-auto prompt'>{prompt}</p>
         <div className='flex justify-between items-center gap-2 mt-4'>
           <div className='flex items-center gap-2'>
-            <div className={`w-7 h-7 rounded-full object-cover bg-primary flex justify-center items-center text-text text-xs font-bold`}>
-              {name[0]}
+            <div className={`w-7 h-7 rounded-full object-cover flex justify-center items-center text-text text-xs font-bold border-2 border-black`} style={{ backgroundColor: RandomColor}}>
+              {name[0].toUpperCase()}
             </div>
             <p className='text-text font-bold text-sm'>{name}</p>
           </div>
           <button type='button' onClick={()=>{downloadImage(_id, photoUrl);
           alert(RandomColor);
-          }} className='outline-none bg-transparent border-none'><img src={download} alt="download" className='w-6 h-6 object-contain invert hover:scale-[1.1]'/></button>
+          }} className='outline-none bg-transparent border-none'><img src={download} alt="download" className='w-6 h-6 object-contain hover:scale-[1.1]'/></button>
         </div>
       </div>
     </div>
