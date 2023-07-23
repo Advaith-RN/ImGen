@@ -100,7 +100,7 @@ const CreatePost = () => {
             setForm({...form, prompt: randomPrompt})
           }}
         />
-        <div className='relative bg-gray-50 border border-gray-300 text-gray-900 rounded-lg text-sm focus:ring-blue-500 focus:border-blue-500 w-96 p-3 h-96 flex justify-center items-center ml-[10%] sm:ml-0'>
+        <div className='relative bg-gray-50 border border-gray-300 text-gray-900 rounded-lg text-sm focus:ring-blue-500 focus:border-blue-500 w-96 p-3 h-96 flex justify-center items-center'>
           {form.photo ? (<img 
             src={form.photo}
             alt={form.prompt}
