@@ -7,7 +7,7 @@ const FormField = ({ label, type, name, placeholder, value, handleChange, isSurp
         <label className='block text-sm font-medium text-text'>
           {label}
         </label>
-       {isSurpriseMe && <button type='button' onClick={handleSurpriseMe} className='font-semibold text-xs bg-[#ECECF1] py-1 px-2 rounded-[5px] text-black'>Surprise Me</button>}
+       {isSurpriseMe && <button type='button' onClick={handleSurpriseMe} className='font-semibold text-xs bg-accent py-1 px-2 rounded-[5px] transition-transform text-background hover:scale-[1.1]'>Surprise Me</button>}
       </div>
       <input 
       type={type}

@@ -72,7 +72,7 @@ const CreatePost = () => {
   return (
     <section className='max-w-7xl mx-auto'>
       <div className='bg-secondary rounded-lg p-10'>
-        <h1 className='font-extrabold text-[#222328] text-5xl'>Create</h1>
+        <h1 className='font-extrabold text-text text-5xl'>Create</h1>
         <p className='mt-2 text-text text-lg max-w-[1000px]'>Make Images using the DALL E API</p>
       </div>
       <form className='mt-16 max-w-3xl' onSubmit={()=>{
@@ -100,7 +100,7 @@ const CreatePost = () => {
             setForm({...form, prompt: randomPrompt})
           }}
         />
-        <div className='relative bg-gray-50 border border-gray-300 text-gray-900 rounded-lg text-sm focus:ring-blue-500 focus:border-blue-500 w-96 p-3 h-96 flex justify-center items-center'>
+        <div className='relative bg-gray-50 border border-gray-300 text-gray-900 rounded-lg text-sm focus:ring-blue-500 focus:border-blue-500 w-96 p-3 h-96 flex justify-center items-center ml-[10%] sm:ml-0'>
           {form.photo ? (<img 
             src={form.photo}
             alt={form.prompt}
@@ -115,7 +115,7 @@ const CreatePost = () => {
         </div>
       </div>
       <div className='mt-5 flex gap-5'>
-        <button type="button" onClick={generateImg} className='text-text bg-primary font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center hover:bg-green-600'>
+        <button type="button" onClick={generateImg} className='text-text bg-primary font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center  transition-transform hover:scale-[1.1]'>
           {generatingImg ? "Generating..." : "Generate Image"}
         </button>
       </div>
@@ -123,7 +123,7 @@ const CreatePost = () => {
         <p className='mt-2 text-text text-[14px]'>Once you have created the image you want, share it with others in the community!</p>
         <button
           type="submit"
-          className='mt-3 text-white bg-accent font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center'
+          className='mt-3 text-white bg-accent font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center transition-transform hover:scale-[1.1]'
           onClick={handleSubmit}
         >
           {loading ? "Posting..." : "Share it with the world!"}
