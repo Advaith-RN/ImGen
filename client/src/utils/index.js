@@ -10,7 +10,6 @@ export function getRandomPrompt(prompt){
     return surpriseMePrompts[randomIndex];
 }
 
-export async function downloadImage(_id, photoUrl) {
-    FileSaver.saveAs(photoUrl, `download-${_id}.jpg`);
-    console.log("downlowd");
+export async function downloadImage(_id, photoUrl, prompt) {
+    FileSaver.saveAs(photoUrl, `${prompt}.png`);
 }

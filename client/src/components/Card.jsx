@@ -20,9 +20,7 @@ const Card = ({ _id, name, prompt, photoUrl}) => {
             </div>
             <p className='text-text font-bold text-sm'>{name}</p>
           </div>
-          <button type='button' onClick={()=>{downloadImage(_id, photoUrl);
-          alert(RandomColor);
-          }} className='outline-none bg-transparent border-none'><img src={download} alt="download" className='w-6 h-6 object-contain hover:scale-[1.1]'/></button>
+          <button type='button' onClick={()=>{downloadImage(_id, photoUrl, prompt);    }} className='outline-none bg-transparent border-none'><img src={download} alt="download" className='w-6 h-6 object-contain hover:scale-[1.1]'/></button>
         </div>
       </div>
     </div>
