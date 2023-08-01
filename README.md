@@ -1,4 +1,7 @@
+![imgen banner](https://github.com/Advaith-RN/ImGen/assets/77977360/b3ce7937-e229-45de-843e-ef7a15e06410)
+
 # ImGen
+
 
 Welcome to **ImGen**, an AI-powered image generator website that allows users to create their own unique AI-generated images and share them with the world. ImGen leverages the power of deep learning to generate impressive and imaginative visuals based on user input, all while using Cloudinary to store images, MongoDB to store data, and the OpenAI API for AI image generation.
 
@@ -30,7 +33,8 @@ cd client
 Install dependencies and run the Server
 ```
 yarn        //install dependencies
-yarn dev 
+yarn dev ![imgen banner](https://github.com/Advaith-RN/ImGen/assets/77977360/9bd11dc6-38eb-41a6-8515-feeec5eb74ef)
+
 ```
 ### To make changes to the backend as well, you will have to make sure all the API calls in your front-end get redirected to your locally running backend.
 Currently, the front-end runs off of a remote hosted back-end on Render.
