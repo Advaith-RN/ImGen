@@ -2,7 +2,7 @@
 
 Welcome to **ImGen**, an AI-powered image generator website that allows users to create their own unique AI-generated images and share them with the world. ImGen leverages the power of deep learning to generate impressive and imaginative visuals based on user input, all while using Cloudinary to store images, MongoDB to store data, and the OpenAI API for AI image generation.
 
-https://imgen-project.vercel.app/
+### https://imgen-project.vercel.app/
 
 # How it Works
 
