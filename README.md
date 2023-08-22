@@ -33,7 +33,7 @@ cd client
 Install dependencies and run the Server
 ```
 yarn        //install dependencies
-yarn dev ![imgen banner](https://github.com/Advaith-RN/ImGen/assets/77977360/9bd11dc6-38eb-41a6-8515-feeec5eb74ef)
+yarn dev 
 
 ```
 ### To make changes to the backend as well, you will have to make sure all the API calls in your front-end get redirected to your locally running backend.
